@@ -139,7 +139,7 @@ sup {
 }
 
 .hero {
-    background-image: url(/images/AileenWall.png), linear-gradient( 65deg , #0c074b, #2ba2e7, rgb(244, 255, 180));
+    background-image: url(AileenWall.png), linear-gradient( 65deg , #0c074b, #2ba2e7, rgb(244, 255, 180));
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-size: cover;
