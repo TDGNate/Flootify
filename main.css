@@ -79,16 +79,17 @@ header {
 	display: none;
 }
 
+.nav-links li:hover,
+.log-in li:hover {
+	cursor: pointer;
+	color: var(--main-clr);
+}
+
 .fa-spotify {
 	color: white;
 	font-size: 28px;
 	align-self: center;
 	transition: all 200ms;
-	cursor: pointer;
-}
-
-.fa-spotify:hover {
-	color: var(--main-clr);
 }
 
 .logos {
@@ -99,14 +100,9 @@ header {
 }
 
 .Spotify-text {
-	cursor: pointer;
 	color: white;
 	font-size: 1.1119em;
 	transition: all 200ms;
-}
-
-.Spotify-text:hover {
-	color: var(--main-clr);
 }
 
 sup {
@@ -197,7 +193,6 @@ footer {
 }
 
 footer h3 {
-	cursor: pointer;
 	display: grid;
 	grid-template-columns: 20px 20px;
 	gap: 15px;
@@ -205,11 +200,6 @@ footer h3 {
 
 footer h4 {
 	color: rgb(52, 130, 231);
-	cursor: pointer;
-}
-
-footer h4:hover {
-	color: rgb(124, 181, 255);
 }
 
 footer p {
@@ -218,20 +208,12 @@ footer p {
 
 footer p:hover {
 	color: rgb(198, 167, 255);
-}
-
-.company {
 	cursor: pointer;
-	margin-bottom: 4em;
 }
 
-.communities {
-	cursor: pointer;
-	margin-bottom: 4em;
-}
-
+.company,
+.communities,
 .useful-links {
-	cursor: pointer;
 	margin-bottom: 4em;
 }
 
@@ -250,14 +232,8 @@ footer p:hover {
 	transition: all 400ms ease-in;
 }
 
-.fa-instagram:hover {
-	color: var(--main-clr);
-}
-
-.fa-pinterest:hover {
-	color: var(--main-clr);
-}
-
+.fa-instagram:hover,
+.fa-pinterest:hover,
 .fa-facebook:hover {
 	color: var(--main-clr);
 }
