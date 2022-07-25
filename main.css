@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(51, 49, 49);
+}
+
+:root {
+	--main-clr: rgb(59, 209, 255);
+	--hero-objts: rgb(98, 236, 206);
+}
+
+/* first hand selectors */
+
+h1 {
+	font-weight: bold;
+	font-size: 2.8em;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+p {
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	text-decoration: none;
+}
+
+span {
+	display: block;
+	line-height: 2ch;
+}
+
+.container {
+	width: 900px, auto;
+}
+
+/* decor  */
+
+header {
+	display: block;
+	background-color: black;
+	overflow-y: hidden;
+	height: 55px;
+}
+
+.nav-bar {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	color: white;
+	padding: 10px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.nav-links,
+.dash,
+.log-in {
+	display: none;
+}
+
+.fa-spotify {
+	color: white;
+	font-size: 28px;
+	align-self: center;
+	transition: all 200ms;
+	cursor: pointer;
+}
+
+.fa-spotify:hover {
+	color: var(--main-clr);
+}
+
+.logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 5px;
+}
+
+.Spotify-text {
+	cursor: pointer;
+	color: white;
+	font-size: 1.1119em;
+	transition: all 200ms;
+}
+
+.Spotify-text:hover {
+	color: var(--main-clr);
+}
+
+sup {
+	margin-left: 2px;
+	color: white;
+}
+
+.menu {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	color: white;
+	transition: all 200ms;
+}
+
+.menu:hover {
+	cursor: pointer;
+	color: var(--main-clr);
+}
+
+.fa-bars {
+	position: absolute;
+	font-size: 1.5em;
+}
+
+.hero {
+	background-image: url(AileenWall.png),
+		linear-gradient(65deg, #0c074b, #2ba2e7, rgb(244, 255, 181));
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	height: 95vh;
+	text-align: center;
+	overflow-y: hidden;
+	z-index: 1;
+}
+
+.hero p {
+	margin-bottom: 32px;
+	line-height: 3ch;
+}
+
+.btc {
+	display: inline-block;
+	color: black;
+}
+
+.btn {
+	background-image: linear-gradient(
+		to right,
+		#3b2eec,
+		#2ba2e7,
+		rgb(80, 255, 203)
+	);
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	padding: 14px 32px;
+	height: 50px;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 50px;
+	border: 2px solid white;
+	opacity: 1;
+	transition: all 200ms;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: white;
+	opacity: 0.7;
+	box-shadow: 0px 0px 15px 1px white;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 1.19em;
+	background: black;
+	color: white;
+	line-height: 3ch;
+	margin: 0;
+}
+
+footer h3 {
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: 20px 20px;
+	gap: 15px;
+}
+
+footer h4 {
+	color: rgb(52, 130, 231);
+	cursor: pointer;
+}
+
+footer h4:hover {
+	color: rgb(124, 181, 255);
+}
+
+footer p {
+	transition: all 90ms ease-in;
+}
+
+footer p:hover {
+	color: rgb(198, 167, 255);
+}
+
+.company {
+	cursor: pointer;
+	margin-bottom: 4em;
+}
+
+.communities {
+	cursor: pointer;
+	margin-bottom: 4em;
+}
+
+.useful-links {
+	cursor: pointer;
+	margin-bottom: 4em;
+}
+
+.icons {
+	cursor: pointer;
+	max-width: 230px;
+	display: flex;
+	font-size: 35px;
+	margin: 0 2px 1.5em;
+	column-gap: 15px;
+}
+
+.fa-instagram,
+.fa-pinterest,
+.fa-facebook {
+	transition: all 400ms ease-in;
+}
+
+.fa-instagram:hover {
+	color: var(--main-clr);
+}
+
+.fa-pinterest:hover {
+	color: var(--main-clr);
+}
+
+.fa-facebook:hover {
+	color: var(--main-clr);
+}
+
+@media screen and (min-width: 480px) {
+	h1 {
+		font-weight: bold;
+		font-size: 5.8em;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.labels {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1em;
+		margin-bottom: 2em;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	header {
+		display: block;
+		background-color: black;
+		overflow-y: hidden;
+		height: 80px;
+	}
+
+	.logos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 5px;
+		font-size: 1.5em;
+		margin-left: 25px;
+	}
+
+	.mainlogo {
+		font-size: 1.7em;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.nav-bar {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0;
+		color: white;
+		padding: 0;
+		z-index: 10;
+	}
+
+	.rs {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: 1em;
+		padding: 0;
+		column-gap: 1.5em;
+	}
+
+	.nav-links {
+		margin: 0;
+		display: flex;
+		column-gap: 1em;
+		column-gap: 1em;
+	}
+
+	.log-in {
+		margin: 0 1em;
+		display: flex;
+		column-gap: 1em;
+	}
+
+	.log-in ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	footer {
+		padding-top: 3.5em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		column-gap: auto;
+		text-align: start;
+	}
+
+	.fa-spotify {
+		align-self: center;
+	}
+
+	.labels .fa-spotify {
+		align-self: start;
+	}
+
+	.labels {
+		display: flex;
+		flex-direction: row;
+		column-gap: 2em;
+	}
+
+	footer h3 {
+		align-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-weight: bold;
+		font-size: 10.5em;
+		text-align: center;
+		margin-bottom: 18px;
+	}
+
+	.hero p {
+		font-size: 1.6em;
+		margin-bottom: 32px;
+		line-height: 3ch;
+		text-align: center;
+		-webkit-text-fill-color: rgb(0, 89, 148);
+		-webkit-text-stroke-width: 0.3px;
+		-webkit-text-stroke-color: rgb(181, 249, 255);
+	}
+
+	.btc {
+		color: black;
+	}
+
+	.hero p span {
+		display: inline-block;
+		color: black;
+	}
+
+	.hero {
+		height: 95vh;
+	}
+
+	footer {
+		font-size: 1.15em;
+	}
+	footer h3 {
+		font-size: 1.2em;
+	}
+
+	footer h4 {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 1650px) {
+	.hero p {
+		color: rgb(0, 77, 129);
+	}
+}
