@@ -15,8 +15,8 @@ https://tdgnate.github.io/Flootify/
 
 - Desktop
 
-<img src="./FlootifyScreenShot.png" alt="website's photo on Desktop">
+<img src="./assets/imgs/FlootifyScreenShot.png" alt="website's photo on Desktop">
 
 - Phone
 
-<img src="./FlootifyScreenShotPhone.png" alt="website's screenschot on phone">
+<img src="./assets/imgs/FlootifyScreenShotPhone.png" alt="website's screenschot on phone">
