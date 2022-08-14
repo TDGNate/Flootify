@@ -13,4 +13,10 @@ https://tdgnate.github.io/Flootify/
 
 ## Website's look
 
-<img src="./FlootifyScreenShot.png" alt="website's photo">
+- Desktop
+
+<img src="./FlootifyScreenShot.png" alt="website's photo on Desktop">
+
+- Phone
+
+<img src="./FlootifyScreenShotPhone.png" alt="website's screenschot on phone">
